@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --main-color: #efefef;
+  --primary-color: #555;
+  --secondary-color:#666;
+  --gray-color: #778697;
+  --dark-color: #292b2c;
+  --blue-color: #0275d8;
+  --green-color: #27ae60;
+  --green-sea-color: #16a085;
+  --pumpkin-color: #ffc153;
+  --red-color: #eb6b56;
+  --white-color: #fff;
+  --fav-color: rgb(13, 161, 119);
+  /* --cat-color: #2E5A88; */
+  --cat-color:  #5b5f97;
+  --fav-1-color: #b05f6d;
+  --fav-2-color: #462446;
+  --fav-3-color: #47b39d;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins','Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: var(--white-color);
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Some Global Classes For icons */
+.bi-pencil-square {
+  color: var(--green-sea-color);
+  margin-right: 15px;
+}
+
+.bi-trash-fill {
+  color: var(--red-color);
+}
+
+/* Scrollbar Classes For Google Chrome */
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: rgb(187, 179, 179);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--dark-color);
+  border-radius: 15px;
+}

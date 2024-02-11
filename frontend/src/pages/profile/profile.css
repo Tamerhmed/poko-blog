@@ -1,0 +1,162 @@
+.profile {
+    padding: 30px;
+}
+
+.profile-header {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--fav-1-color);
+}
+
+.profile-loader {
+    display: flex;
+    min-height: calc(100vh - 130px);
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+    margin: 1.2rem 0;
+}
+
+.profile-image-wrapper {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.upload-profile-photo-icon,
+.upload-profile-photo-btn {
+    color: var(--fav-1-color);
+    background-color: #eee;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    padding: 0 5px;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    margin: auto;
+    width: max-content;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 21px;
+}
+
+.upload-profile-photo-btn {
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--fav-1-color);
+    right:-60px;
+    top:80px;
+    padding: 4px 5px;
+    height: 3.5rem;
+    width: 3.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.upload-profile-photo-btn:hover {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--white-color);
+    background-color: var(--fav-1-color);
+    border: 1px solid var(--white-color);
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.profile-username {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white-color);
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.profile-bio {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.user-date-joined .span-1{
+    color: #ddd;
+    font-size: 1rem;
+}
+
+.user-date-joined .span-2 {
+    color: #ddd;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.profile-update-btn {
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #fff;
+    color: var(--fav-1-color);
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.profile-posts-list {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.profile-posts-list-title {
+    margin-bottom: 20px;
+    margin-top: 3rem;
+    padding: 5px 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    /* border-bottom: 2px solid var(--primary-color); */
+}
+
+.delete-account-btn {
+    background-color: var(--fav-1-color);
+    color: var(--white-color);
+    padding: 6px;
+    border: 1px solid var(--white-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 920px) {
+    .profile-posts-list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .profile {
+        padding: 15px;
+    }
+
+    .profile-header {
+        padding: 10px;
+    }
+
+    .profile-bio {
+        text-align: center;
+    }
+}

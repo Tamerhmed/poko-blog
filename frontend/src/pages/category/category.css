@@ -1,0 +1,31 @@
+.category {
+    min-height: calc(100vh - 130px);
+    padding: 20px;
+}
+
+.category-title {
+   margin-bottom: 15px;
+   color: var(--primary-color);
+   letter-spacing: 1px;
+   padding-bottom: 5px;
+   /* border-bottom: 2px solid var(--gray-color); */
+   font-size: 1.3rem;
+   font-weight: 600;
+   width: max-content;
+}
+
+.category-not-found {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.category-not-found span {
+    color: var(--fav-color);
+}
+
+.category-not-found-link {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
