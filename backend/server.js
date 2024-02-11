@@ -1,4 +1,7 @@
 const express = require('express');
+const dotenv = require('dotenv').config();
+const morgan = require('morgan');
+const path = require('path');
 const connectDB = require('./config/connectDb');
 const authRouter = require('./routes/authRoute');
 const usersRouter = require('./routes/usersRoute');
@@ -7,8 +10,6 @@ const commentsRouter = require('./routes/commentsRoute');
 const categoriesRouter = require('./routes/categoriesRoute');
 const {errorHandler, notFound} = require('./middlewares/error');
 const cors = require('cors');
-const dotenv = require('dotenv').config();
-const path = require('path');
 
 const app = express();
 app.use(express.json());
@@ -31,10 +32,10 @@ app.use('/api/categories', categoriesRouter);
 
 if(process.env.NODE_ENV === 'production') {
     //set static folder
-    app.use(express.static(path.join(__dirname, '/frontend/build')));
+    app.use(express.static(path.join(__dirname, '../frontend/build')));
 
     app.get('*', (req, res) => 
-        res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
+        res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'))
     );
 } else {
     app.get('/', (req, res)=> {
