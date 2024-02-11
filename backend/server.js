@@ -8,6 +8,7 @@ const categoriesRouter = require('./routes/categoriesRoute');
 const {errorHandler, notFound} = require('./middlewares/error');
 const cors = require('cors');
 const dotenv = require('dotenv').config();
+const path = require('path');
 
 const app = express();
 app.use(express.json());
