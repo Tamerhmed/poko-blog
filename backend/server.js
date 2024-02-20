@@ -15,9 +15,9 @@ const app = express();
 app.use(express.json());
 
 //Cors policy
-app.use(cors({
-    origin: "http://localhost:3000"
-}));
+// app.use(cors({
+//     origin: "http://localhost:3000"
+// }));
 
 //Routes
 app.use('/api/auth', authRouter);
