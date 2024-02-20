@@ -13,6 +13,7 @@
   "author": "tamer ahmed",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.4.17",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "cjs-loader": "^0.1.0",
@@ -28,6 +29,7 @@
     "mongoose": "^8.1.1",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "update-browserslist-db": "^1.0.13"
   }
 }
